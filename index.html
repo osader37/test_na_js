@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vopros1">
+        <div>
+          <h1>В какой деревне проходила Курское битва?</h1>
+          <div class="border px-3 py-3 otvet1">Хатынь</div>
+          <div class="border px-3 py-3 otvet2">Прохоровка</div>
+          <div class="border px-3 py-3 otvet3">Лопшеньга</div>
+          <div class="border px-3 py-3 otvet4">Бородино</div>
+        </div>
+      </div>
+      <div style="display: none" class="vopros2">
+        <div>
+          <h1>Кто был последним императором Российской Империи</h1>
+          <div class="border px-3 py-3 otvet21">Александр III</div>
+          <div class="border px-3 py-3 otvet22">Павел I</div>
+          <div class="border px-3 py-3 otvet23">Николай II</div>
+          <div class="border px-3 py-3 otvet24">Иван VI</div>
+        </div>
+      </div>
+      <div style="display: none" class="vopros3">
+        <div>
+          <h1>Кто автор этой музыки?</h1>
+          <div>
+          	<audio src="vivaldi.mp3" controls></audio>
+          </div>
+          <div class="border px-3 py-3 otvet31">Шопен</div>
+          <div class="border px-3 py-3 otvet32">Моцарт</div>
+          <div class="border px-3 py-3 otvet33">Бетховен</div>
+          <div class="border px-3 py-3 otvet34">Вивальди</div>
+        </div>
+      </div>
+      <div style="display: none" class="vopros4">
+        <div>
+          <h1>Из какого фильма эта сцена?</h1>
+          <div class="col-12">
+          	<video>
+          		<source src="here's jonny.mp4" type="">
+          	</video>
+          </div>
+          <div class="border px-3 py-3 otvet41">Сияние</div>
+          <div class="border px-3 py-3 otvet42">Пятница13</div>
+          <div class="border px-3 py-3 otvet43">Кошмар на улице взяов</div>
+          <div class="border px-3 py-3 otvet44">Вий</div>
+        </div>
+      </div>
+      <div style="display: none" class="vopros5">
+        <div>
+          <h1>В каком году началась вторая мировая война</h1>
+          <div>
+         
+          </div>
+          <div class="border px-3 py-3 otvet51">1939</div>
+          <div class="border px-3 py-3 otvet52">1940</div>
+          <div class="border px-3 py-3 otvet53">1941</div>
+          <div class="border px-3 py-3 otvet54">1938</div>
+        </div>
+      </div>
+      <div style="display: none" class="vopros6">
+        <div>
+          <h1>Откуда у Зуко ожог на пол лица?</h1>
+          <div>
+      
+          </div>
+          <div class="border px-3 py-3 otvet61">Обожгли во время войны</div>
+          <div class="border px-3 py-3 otvet62">Пролил кипяток</div>
+          <div class="border px-3 py-3 otvet63">Отец обжег его</div>
+          <div class="border px-3 py-3 otvet64">Он у него с рождения</div>
+        </div>
+      </div>
+      <div style="display: none" class="vopros7">
+        <div>
+          <h1>Как называется эта музыка?</h1>
+          <div>
+          	<audio src="реквием.mp3" controls></audio>
+          </div>
+          <div class="border px-3 py-3 otvet71">Щелкунчик Овертюра</div>
+          <div class="border px-3 py-3 otvet72">Реквием по мечте</div>
+          <div class="border px-3 py-3 otvet73">Вальс цветов</div>
+          <div class="border px-3 py-3 otvet74">Интерстеллар - Ханс Циммер</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript">
+    //1 vopros
+      document.querySelector(".otvet1").onclick = function(){
+        alert("ошибка1");
+      }
+      document.querySelector(".otvet2").onclick = function(){
+        alert("правильно");
+        document.querySelector(".vopros2").style.display = "block";
+        document.querySelector(".vopros1").style.display = "none";
+        
+      }
+      document.querySelector(".otvet3").onclick = function(){
+        alert("ошибка");
+      }
+      document.querySelector(".otvet4").onclick = function(){
+        alert("ошибка3");
+      }
+      //2 vopros
+      document.querySelector(".otvet21").onclick = function(){
+        alert("ошибка1");
+      }
+      document.querySelector(".otvet22").onclick = function(){
+        alert("ошибка");
+        
+        
+      }
+      document.querySelector(".otvet23").onclick = function(){
+        alert("ошибка");
+        document.querySelector(".vopros3").style.display = "block";
+        document.querySelector(".vopros2").style.display = "none";
+      }
+      document.querySelector(".otvet24").onclick = function(){
+        alert("ошибка3");
+      }
+      //3 vopros
+      document.querySelector(".otvet31").onclick = function(){
+        alert("ошибка1");
+      }
+      document.querySelector(".otvet32").onclick = function(){
+        alert("ошибка");
+        
+        
+      }
+      document.querySelector(".otvet33").onclick = function(){
+        alert("ошибка"); 
+      }
+      document.querySelector(".otvet34").onclick = function(){
+        alert("правильно");
+        document.querySelector(".vopros4").style.display = "block";
+        document.querySelector(".vopros3").style.display = "none";
+      }
+      //4 vopros
+      document.querySelector(".otvet41").onclick = function(){
+        alert("правильно");
+        document.querySelector(".vopros5").style.display = "block";
+        document.querySelector(".vopros4").style.display = "none";
+      }
+      document.querySelector(".otvet426").onclick = function(){
+        alert("ошибка");
+        
+        
+      }
+      document.querySelector(".otvet43").onclick = function(){
+        alert("ошибка");
+      }
+      document.querySelector(".otvet44").onclick = function(){
+        alert("ошибка3");
+      }
+      //5 vopros
+      document.querySelector(".otvet51").onclick = function(){
+        alert("правильно");
+        document.querySelector(".vopros6").style.display = "block";
+        document.querySelector(".vopros5").style.display = "none";
+      }
+      document.querySelector(".otvet52").onclick = function(){
+        alert('ошибка')
+        
+      }
+      document.querySelector(".otvet53").onclick = function(){
+        alert("ошибка");
+      }
+      document.querySelector(".otvet54").onclick = function(){
+        alert("ошибка3");
+      }
+      //6 vopros
+      document.querySelector(".otvet61").onclick = function(){
+        alert("ошибка1");
+      }
+      document.querySelector(".otvet62").onclick = function(){
+		alert('ошибка')        
+      }
+      document.querySelector(".otvet63").onclick = function(){
+        alert("правильно");
+        document.querySelector(".vopros7").style.display = "block";
+        document.querySelector(".vopros6").style.display = "none";
+      }
+      document.querySelector(".otvet64").onclick = function(){
+        alert("ошибка3");
+      }
+      //7 vopros
+      document.querySelector(".otvet71").onclick = function(){
+        alert("ошибка1");
+      }
+      document.querySelector(".otvet72").onclick = function(){
+        alert("правильно");
+        
+      }
+      document.querySelector(".otvet73").onclick = function(){
+        alert("ошибка");
+      }
+      document.querySelector(".otvet74").onclick = function(){
+        alert("ошибка3");
+      }
+    </script>
+  </body>
+</html>
